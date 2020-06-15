@@ -1,0 +1,32 @@
+{
+   "name": "Doit",
+   "short_name": "Doit",
+   "start_url": "/index.html",
+   "display": "standalone",
+   "background_color": "#658DF2",
+   "theme_color": "#658DF2",
+   "orientation": "portrait-primary",
+   "icons": [
+      {
+         "src": "/img/icons/icon 100x40.png",
+         "type": "image/png",
+         "sizes": "100x40"
+      },
+      {
+         "src": "/img/icons/icon 142x56.png",
+         "type": "image/png",
+         "sizes": "142x56"
+      },
+      {
+         "src": "/img/icons/icon 281x112.png",
+         "type": "image/png",
+         "sizes": "281x112"
+      },
+      {
+         "src": "/img/icons/icon-172x172.png",
+         "type": "image/png",
+         "sizes": "172x172"
+      }
+   ]
+
+}

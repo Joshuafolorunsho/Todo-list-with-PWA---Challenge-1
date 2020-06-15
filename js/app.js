@@ -4,15 +4,6 @@
    const form = document.getElementById('form');
    const ul = document.getElementById('ul');
    const clearTasksBtn = document.getElementById('clear-tasks');
-   // const changeBorderBottom = () => {
-   //    if (input.length > 0) {
-   //       input.style.borderBottomColor = '#658DF2';
-   //    } else {
-   //       input.style.borderBottomColor = 'red';
-   //    }
-   // }
-
-   // input.addEventListener('keypress', changeBorderBottom)
 
    // Add task
    const addTask = (value) => {
@@ -43,10 +34,11 @@
    const showClearTasksBtn = () => {
       clearTasksBtn.style.display = 'inline';
    }
-
-   // Clear tasks
+   
+   // Clear all tasks
    const clearAllTask = () => {
       ul.innerHTML = '';
+      clearTasksBtn.style.display = 'none';
    }
 
    // Clear field
@@ -61,6 +53,13 @@
      event.preventDefault();
    });
 
-   ul.addEventListener('click', removeTask)
+   ul.addEventListener('click', removeTask);
+   clearTasksBtn.addEventListener('click', clearAllTask);
+
+   if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+         .then(reg => {})
+         .catch(err => {})
+   }
 
 })();

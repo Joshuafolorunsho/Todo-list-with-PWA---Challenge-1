@@ -47,15 +47,17 @@ p:focus {
 .btn {
    border: none;
    font-family: inherit;
+   cursor: pointer;
 }
 
 .text-field{
    height: 50px;
-   padding: 5px;
+   padding: 3px;
    margin-right: 10px;
    width: 80%;
    border: none;
    border-bottom: 2px solid #000;
+   font-family: inherit;
 }
 
 .text-field:focus {
