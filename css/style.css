@@ -50,6 +50,17 @@ p:focus {
    cursor: pointer;
 }
 
+/*Making the hide element class accessible for screen readers*/
+.hide {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+
 .text-field{
    height: 50px;
    padding: 3px;
